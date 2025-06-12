@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Matematika Seru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <div id="clock" class="clock"></div>
+                <div id="calendar" class="calendar"></div>
+            </div>
+            <h1>Game Matematika</h1>
+            <div class="theme-switcher">
+                <button id="theme-light">Terang</button>
+                <button id="theme-dark">Gelap</button>
+                <button id="theme-animated">Animasi</button>
+            </div>
+        </header>
+
+        <main id="game-area">
+            <div id="start-screen">
+                <h2>Selamat Datang!</h2>
+                <label for="player-name">Masukkan Nama Anda:</label>
+                <input type="text" id="player-name" maxlength="15">
+                <div class="settings">
+                    <label for="timer-toggle">Gunakan Timer Mundur?</label>
+                    <input type="checkbox" id="timer-toggle">
+                    <input type="number" id="timer-duration" value="10" min="5" max="60" disabled> detik
+                </div>
+                <button id="start-button">Mulai Game</button>
+            </div>
+
+            <div id="question-screen" class="hidden">
+                <div class="question-header">
+                    <div id="level-display">Level: 1</div>
+                    <div id="score-display">Skor: 0</div>
+                    <div id="question-timer" class="hidden">Waktu Tersisa: <span id="time-left">10</span>s</div>
+                </div>
+                <div id="question-container">
+                    <p id="question-text"></p>
+                    <input type="number" id="answer-input">
+                    <button id="submit-answer">Jawab</button>
+                    <button id="give-up-button">Menyerah</button>
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+
+            <div id="game-over-screen" class="hidden">
+                <h2>Game Over!</h2>
+                <p id="final-score"></p>
+                <h3>Riwayat Jawaban:</h3>
+                <ul id="answer-history-list"></ul>
+                <button id="restart-button">Mulai Lagi</button>
+            </div>
+
+            <div id="leaderboard-screen" class="hidden">
+                <h2>Papan Peringkat</h2>
+                <table id="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Peringkat</th>
+                            <th>Nama</th>
+                            <th>Skor</th>
+                            <th>Tanggal & Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+                <button id="clear-leaderboard">Hapus Papan Peringkat</button>
+                <button id="back-to-start">Kembali</button>
+            </div>
+        </main>
+
+        <footer>
+            <button id="show-leaderboard">Lihat Papan Peringkat</button>
+        </footer>
+    </div>
+
+    <audio id="correct-sound" src="correct.mp3"></audio> <audio id="wrong-sound" src="wrong.mp3"></audio>     <audio id="click-sound" src="click.mp3"></audio>     <script src="script.js"></script>
+</body>
+</html>
