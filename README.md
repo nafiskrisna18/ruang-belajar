@@ -1,8 +1,8 @@
 # ruang-belajar
 <!-- Profil GitHub README -->
 
-<h1 align="center">Assalamu'alaikum... 🙏, Saya [Nafis Krisna]</h1>
-<h3 align="center">Saya hanyalah [Freelance] dari [Kediri, Jawa Timur]</h3>
+<h1 align="center">Assalamu'alaikum... 🙏, Saya Nafis Krisna</h1>
+<h3 align="center">Saya hanyalah Freelance dari Kediri, Jawa Timur</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="yourusername" />
