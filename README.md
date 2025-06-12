@@ -1,7 +1,7 @@
 # ruang-belajar
 <!-- Profil GitHub README -->
 
-<h1 align="center">Hi 👋, I'm [Nafis Krisna]</h1>
+<h1 align="center">Assalamu'alaikum... 🙏, Saya [Nafis Krisna]</h1>
 <h3 align="center">Saya hanyalah [Freelance] dari [Kediri, Jawa Timur]</h3>
 
 <p align="center">
